@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1=['Polaris','Aldebaran','Deneb,','Vega','Altair','Dubhe','Regulus'];
+    let array2=['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let str=prompt("nhap chuoi : ");
+    let check=true;
+    function star(a) {
+        for(let i=0;i<7;i++) {
+            if (a === array1[i]){
+               check=false;
+             b=array2[i]
+            }
+                }
+        if(check){
+            return "khong tim thay ngoi sao nao ";
+        }else {
+            return "ngoi sao uong ung la " + b ;
+        }
+    }
+    document.write(star(str));
+</script>
+</body>
+</html>
